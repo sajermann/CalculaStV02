@@ -1,0 +1,281 @@
+﻿body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+main {
+    /*flex: 1 0 auto;*/
+}
+
+/*table {
+margin: 0px 50px;
+
+}*/
+.selectItensForPage {
+    display: inherit !important;
+    /* background-color: rgba(255,255,255,0.9); */
+    width: 70px !important;
+    /* padding: 5px; */
+    /* border: 1px solid #f2f2f2; */
+    /* border-radius: 2px; */
+    height: 26px !important;
+}
+.row {
+  /*display: flex;
+  align-items: center;
+  justify-content: center;*/
+  margin-bottom: 0px !important;
+}
+
+.divPesquisaBotoes{
+	display: flex;
+    align-items: center;
+    justify-content: center;
+}
+a {
+  margin: 0px 5px
+}
+
+material-icons left {
+  width: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+.selected {
+  background-color: gray;
+  color: white;
+}
+
+.buttonPerfil {
+  position: sticky;
+  top: 0;
+}
+
+.inputCodigo {
+    width: 57px;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.inputCodigo {
+    width: 57px !important;
+}
+
+.inputQuantidadePreco {
+    width: 90px !important;
+}
+
+
+.inputEstadoOrigem {
+    width: 185px !important;
+}
+
+.inputEstadoDestino {
+    width: 185px !important;
+}
+
+.inputDestinoMaterial {
+    width: 100px !important;
+}
+
+.inputTipoCalculo {
+    width: 100px !important;
+}
+
+
+
+/*label, #example_info {
+    color: white
+}*/
+
+#example {
+    /*color: white*/
+}
+
+#example thead tr th {
+    border: 0px !important;
+}
+    #example tbody tr:hover {
+        background-color: gray;
+    }
+
+    #example tbody tr {
+        background-color: transparent;
+    }
+
+    /*#example thead th, #example thead td {
+        border-bottom: 1px solid white;
+    }*/
+
+table.dataTable.no-footer {
+    border-bottom: 1px solid white;
+}
+
+/*.dataTables_wrapper .dataTables_paginate .paginate_button {
+    color: white !important;
+}*/
+
+.selected {
+    background: grey !important;
+    color: white;
+}
+
+
+
+fieldset.fieldSeparador {
+    border: 1px groove #ddd !important;
+    padding: 0 0.0em 0.4em 0.4em !important;
+    margin: 0 0 0.5em 0 !important;
+    -webkit-box-shadow: 0px 0px 0px 0px #000;
+    box-shadow: 0px 0px 0px 0px #000;
+}
+
+legend.fieldSeparador {
+    font-size: 1.2em !important;
+    font-weight: bold !important;
+    text-align: left !important;
+    width: auto;
+    padding: 0 10px;
+    border-bottom: 1px;
+}
+
+legend {
+    margin-bottom: 0px;
+}
+
+.divEstadosSelecionar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.disabled-result {
+    cursor: not-allowed !important;
+}
+
+.chosen-container {
+    color: black;
+}
+
+
+/* label:hover{cursor:pointer} */
+.descricaoFantasiaAlterado {
+    font-style: italic;
+    text-decoration: underline red;
+}
+
+.jconfirm-type-animated {
+    padding: 2px 2px 0 !important;
+}
+
+.autocompleteOrigem {
+    color: grey !important
+}
+
+/*.autocompleteDestino {
+    color: white;
+}*/
+
+.botoesDestinoMaterial div {
+    margin-right: 0px
+}
+
+.botoesTipoCalculo div {
+    margin-right: 0px
+}
+/* .botoesContribuinte div{margin-right: 0px} */
+
+.botoesContribuinte span {
+    font-size: 10px;
+    padding-left: 24px;
+}
+
+.botoesContribuinte p {
+    margin-bottom: 0px
+}
+
+.botoesContribuinte label {
+    margin-bottom: 0px;
+}
+
+.botoesSimplesNacional span {
+    font-size: 10px;
+    padding-left: 24px;
+}
+
+.botoesSimplesNacional p {
+    margin-bottom: 0px
+}
+
+.botoesSimplesNacional label {
+    margin-bottom: 0px
+}
+
+.headerTable th {
+padding:0px;
+height:10px;
+text-align:center;
+}
+.headerTable td {
+    padding: 0px;
+    height: 10px;
+    text-align: center;
+}
+.tableLancamentosItens td {
+    padding: 0px;
+    height: 10px;
+    text-align: center;
+}
+
+.tableLancamentosItens th {
+    padding: 0px;
+    height: 10px;
+    text-align: center;
+}
+.cellObservacaoHeader {
+    font-size: 12px;
+    font-weight: normal;
+    text-align: left !important;
+}
+
+.divCampoObservacoes {
+    width: 100% !important;
+}
+
+.tableRelacaoPedidos {
+    /*margin: 5px;*/
+}
+
+.divTableLancamentos {
+    margin: 5px;
+}
+.labelHeader {
+    background-color: darkcyan;
+    color: white;
+    border: 1px solid black;
+}
+
+.tableLancamentosItens td, th {
+    border: 1px solid black;
+}
+.headerTable td, th {
+    border: 1px solid black;
+}
+

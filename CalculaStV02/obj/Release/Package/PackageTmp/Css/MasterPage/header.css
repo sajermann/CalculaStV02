@@ -1,0 +1,84 @@
+.header {
+    width: 100%;
+    height: 80px;
+    background-color: blue;
+    color: white;
+    margin-bottom: 10px;
+    
+}
+#LabelTituloHeader {
+font-size:2rem;
+}
+.divHeaderInterna {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    height: 80px;
+}
+
+.diviInfosUsuario {
+    display:flex;
+    flex-direction:column;
+}
+.cartaoUsuario {
+    float: right;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 10px;
+    /*border: 1px solid;*/
+    margin-top: -78px;
+    height: 75px;
+    width: 170px;
+}
+    .cartaoUsuario:hover {
+        cursor: pointer;
+    }
+
+.divImagemUsuario {
+    margin: 10px;
+}
+
+
+
+@media (max-width: 1px) {
+    .header {
+        grid-area: header;
+        width: 100%;
+        position: relative;
+        text-align: center;
+        background-color: blue;
+        color: white;
+        padding: 13px;
+        place-self: center stretch;
+        font-size: 36px;
+        margin-bottom: 10px;
+        box-shadow: 0px 10px 8px 1px grey
+    }
+
+        .header escritaCabecalho {
+            margin: 0;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin-right: -50%;
+            transform: translate(-50%, -50%)
+        }
+
+    .cartaoUsuario {
+        float: right;
+    }
+
+    .imagemCartaoUsuario {
+        margin-right: 5px;
+        float: center;
+    }
+
+    nomeUsuario {
+        display: block;
+        font-size: 14px;
+        float: center;
+    }
+}
