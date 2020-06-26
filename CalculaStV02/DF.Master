@@ -1,0 +1,204 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="DF.master.cs" Inherits="CalculaStV2.DF" %>
+
+<!DOCTYPE html>
+
+    <html>
+        <head runat="server">
+            <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+            <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+            <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+            <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" rel="stylesheet" />
+   
+             <!-- Css Compartilhados -->
+            <asp:PlaceHolder runat="server">
+                <%: Styles.Render("~/bundles/DFmasterpageCSS") %>
+            </asp:PlaceHolder>
+            <asp:ContentPlaceHolder ID="CssExclusivos" runat="server"></asp:ContentPlaceHolder>
+            <title><asp:ContentPlaceHolder ID="TituloPagina" runat="server"></asp:ContentPlaceHolder></title>
+            <asp:ContentPlaceHolder ID="head" runat="server">
+            </asp:ContentPlaceHolder>
+        </head>
+    <body>
+        <header>
+            <nav>
+                <div class="nav-wrapper #263238 blue-grey darken-4">
+                    <a href="#!" class="brand-logo LabelTituloHeader">Logo</a>
+                    <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                    <ul class="right hide-on-med-and-down">
+                        <li><a href="#" data-target="slide-out" class="botao"><i class="material-icons">face</i></a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <div class="progress progressBar" style="display:none;">
+            <div class="indeterminate"></div>
+        </div>
+        <main>
+            <form id="form1" runat="server">
+                <div>
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
+                </div>
+            </form>
+        </main>
+        <ul id="slide-out" class="sidenav sidePerfil">
+            <div id="profile-card" class="card" style="margin: 0px; height: 100%; overflow: visible;">
+                <div class="card-image waves-effect waves-block waves-light">
+                    <img style="width:300px; height:200px;" class="backgroundUser activator" src="https://i.ytimg.com/vi/qA92RwS0D4A/maxresdefault.jpg" alt="user bg">
+                </div>
+            <div class="card-content" style="padding:10px;margin-top: -60px;z-index: 100;position: absolute;width: 100%;">
+                <div style="top: 175px;z-index: 1;display: flex;align-items: center;justify-content: space-between;">
+                    <img style="width:100px;height:100px;" src="https://vignette.wikia.nocookie.net/gta/images/7/78/MDS.PNG/revision/latest?cb=20150618044620&path-prefix=pt" alt="" class="avatarUser circle responsive-img activator card-profile-image">
+                    <a class="btn-floating activator btn-move-up waves-effect waves-light darken-2 right"><i class="material-icons">edit</i></a>
+                </div>
+            <div style="margin:5px;">
+                <li class="divider" style="margin:0px;"></li>
+                <span class="card-title activator grey-text text-darken-4" style="padding:5px;margin-bottom:0px;display: flex;"><i class="material-icons">verified_user</i><span class="nameUser">Bruno Sajermann</span></span>
+                <li class="divider" style="margin:0px;"></li>
+            </div>
+            <p style="display:flex;align-items:center;margin: 5px 0px;"><i class="material-icons tooltipped" data-position="bottom" data-tooltip="ID Usuário">perm_contact_calendar</i> <span class="idUser">1</span></p>
+            <p style="display:flex;align-items:center;margin: 5px 0px;"><i class="material-icons tooltipped" data-position="bottom" data-tooltip="Tipo">card_membership</i> <span class="tipoUser">Administrator</span></p>
+            <p style="display:flex;align-items:center;margin: 5px 0px;"><i class="material-icons tooltipped" data-position="bottom" data-tooltip="Tel">smartphone</i> <span class="telUser">+55 (011) 97592-9454</span></p>
+            <p style="display:flex;align-items:center;margin: 5px 0px;"><i class="material-icons tooltipped" data-position="bottom" data-tooltip="Email">email</i> <span class="emailUser">contato@sajermann.com</span></p>
+            <p style="display:flex;align-items:center;margin: 5px 0px;"><i class="material-icons tooltipped" data-position="bottom" data-tooltip="Validade">calendar_today</i> <span class="validadeUser">Indeterminada</span></p>
+            <p style="display:flex;align-items:center;margin: 5px 0px;"><i class="material-icons tooltipped" data-position="bottom" data-tooltip="Tema">format_paint</i> <span class="temaUser">Default</span></p>
+            <li class="divider" style="margin:0px;"></li>
+            <p style="display:flex;text-align: justify;padding-top: 5px;"><i class="material-icons tooltipped" data-position="bottom" data-tooltip="Bio">assignment_ind</i> <span class="bioUser">Developer</span></p>
+
+            </div>
+            <div class="card-reveal" style="display: none;z-index: 100;">
+                <div class="col s12">
+                    <ul class="tabs" style="display: flex;align-items: center;justify-content: center;">
+                        <li class="tab col s3 iconsTabsPerfil" style="margin:20px"><a style="padding: 0px;" class="active" href="#test1"><i style="margin: 0px;" class="material-icons tooltipped iconeTabsPerfil" data-position="bottom" data-tooltip="Básico">perm_contact_calendar</i></a></li>
+                        <li class="tab col s3 iconsTabsPerfil" style="margin:20px"><a style="padding: 0px;" href="#test2"><i style="margin: 0px;" class="material-icons tooltipped iconeTabsPerfil" data-position="bottom" data-tooltip="Senha">lock</i></a></li>
+                        <li class="tab col s3 iconsTabsPerfil" style="margin:20px"><a style="padding: 0px;" href="#test3"><i style="margin: 0px;" class="material-icons tooltipped iconeTabsPerfil" data-position="bottom" data-tooltip="Imagens">collections</i></a></li>
+                    </ul>
+                </div>
+                <div id="test1" class="col s12">
+                    <p>
+                        <div class="input-field col s12">
+                            <i class="material-icons prefix">assignment_ind</i>
+                            <textarea id="textarea1" class="active materialize-textarea editBioUser" data-length="120">Here is some more information about this card.Here is some more information about this card.Here is some more infor.</textarea>
+                            <label for="textarea1">Biografia</label>
+                        </div>
+                    </p>
+                    <p>
+                        <div class="input-field col s12">
+                            <i class="material-icons prefix">perm_identity</i>
+                            <input value="Nome" type="text" id="editNameUser" class="active validate editNameUser" data-length="15">
+                            <label for="editNameUser">Nome</label>
+                        </div>
+                    </p>
+                    <p>
+                        <div class="input-field col s12">
+                            <i class="material-icons prefix">perm_identity</i>
+                            <input value="Sobrenome" type="text" id="editLastNameUser" class="active validate editLastNameUser" data-length="20">
+                            <label for="editLastNameUser">Sobrenome</label>
+                        </div>
+                    </p>
+                    <p>
+                        <div class="input-field col s6">
+                            <i class="material-icons prefix">phone</i>
+                            <input value="11111111" id="first_name2" type="text" class="validate editTelUser">
+                            <label class="active" for="first_name2">Telefone</label>
+                        </div>
+                    </p>
+                    <p>
+                        <div class="input-field col s6">
+                            <i class="material-icons prefix">email</i>
+                            <input value="e" id="editEmailUser" type="email" class="validate editEmailUser">
+                            <label class="active" for="editEmailUser">Email</label>
+                            <span class="helper-text editEmailUser" data-error="Email Inválido" data-success="Parece Ok"></span>
+                        </div>
+                    </p>
+
+                </div>
+                <div id="test2" class="col s12">
+
+                    <div class="input-field col s6">
+                        <input value="" id="editPassUser1" type="password" class="validate editPassUser">
+                        <label class="active" for="editPassUser1">Senha Atual</label>
+                    </div>
+
+                    <div class="input-field col s6">
+                        <input value="" id="editNewPassUser" type="password" class="validate editNewPassUser">
+                        <label class="active" for="editNewPassUser">Nova Senha</label>
+                    </div>
+
+                    <div class="input-field col s6">
+                        <input value="" id="editRepeatNewPassUser" type="password" class="validate editRepeatNewPassUser">
+                        <label class="active" for="editRepeatNewPassUser">Repetir Nova Senha</label>
+                    </div>
+                </div>
+                <div id="test3" class="col s12">
+                    <div style="display: flex;align-items: center;justify-content: center;flex-direction: column;">
+                         <img style="width:75px; height:75px;" class="editAvatarUserImage" src="https://vignette.wikia.nocookie.net/gta/images/7/78/MDS.PNG/revision/latest?cb=20150618044620&path-prefix=pt" alt="user bg">
+                        <%--<p>--%>
+                            <div class="input-field col s6">
+                                <input value="https://vignette.wikia.nocookie.net/gta/images/7/78/MDS.PNG/revision/latest?cb=20150618044620&path-prefix=pt" id="editAvatarUser" type="text" class="validate editAvatarUser">
+                                <label class="active" for="editAvatarUser">Avatar</label>
+                            </div>
+                        <%--</p>--%>
+                    </div>
+
+                    <div style="display: flex;align-items: center;justify-content: center;flex-direction: column;">
+                        <img style="width:175px; height:75px;" class="editUserBackgroundImage" src="https://i.ytimg.com/vi/qA92RwS0D4A/maxresdefault.jpg" alt="user bg">
+                        <%--<p>--%>
+                            <div class="input-field col s6">
+                                <input value="https://i.ytimg.com/vi/qA92RwS0D4A/maxresdefault.jpg" id="editBackgroundUser" type="text" class="validate editBackgroundUser">
+                                <label class="active" for="editBackgroundUser">Background</label>
+                            </div>
+                        <%--</p>--%>
+                    </div>
+
+                   <div style="display: flex;align-items: center;justify-content: center;flex-direction: column;">
+                    <div class="input-field col s12">
+                        <select class="editThemeUser">
+                          <option value="" disabled selected>Escolha Seu Tema</option>
+                          <option value="darkcyan">darkcyan</option>
+                          <option value="2">Option 2</option>
+                          <option value="3">Option 3</option>
+                        </select>
+                        <label>Tema Site</label>
+                      </div>
+                    </div>
+                </div>
+                <a class="waves-effect waves-light btn buttonSavePerfil" style="font-size: 10px;font-weight:0;display: inline-block;"><i class="material-icons left">check_box</i>Salvar</a>
+                <a class="waves-effect waves-light card-title btn #d50000 red accent-4" style="font-size: 10px;font-weight:0;display: inline-block;"><i class="material-icons left">cancel</i>Fechar</a>
+            </div>
+    </ul>
+    
+    <footer class="page-footer #263238 blue-grey darken-4">
+      <div class="container">
+        <div class="row">
+          <div class="col l6 s12">
+            <h5 class="white-text">CalculaSt</h5>
+            <p class="grey-text text-lighten-4">Desenvolvido por Bruno Sájermann.</p>
+          </div>
+          <div class="col l4 offset-l2 s12">
+            <h5 class="white-text">Sobre Autor</h5>
+            <ul>
+              <li><a class="grey-text text-lighten-3" href="http://bruno.sajermann.com/" target="_blank">Site</a></li>
+              <li><a class="grey-text text-lighten-3" href="https://www.linkedin.com/in/devbrunosajermann/" target="_blank">Linkedin</a></li>
+              <li><a class="grey-text text-lighten-3" href="https://github.com/sajermann" target="_blank">Github</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright">
+        <div class="container">
+          © 2018-2020 Copyright
+          <a class="grey-text text-lighten-4 right" href="http://bruno.sajermann.com/" target="_blank">Sobre</a>
+        </div>
+      </div>
+    </footer>
+            <asp:PlaceHolder runat="server">
+                <%: Scripts.Render("~/bundles/DFmasterpageJS") %>
+            </asp:PlaceHolder>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js"></script>
+            <script src="/Scripts/MasterPage/DFmasterPage.js"></script>
+        <asp:ContentPlaceHolder ID="ScriptExclusivo" runat="server"></asp:ContentPlaceHolder>
+    </body>
+</html>
